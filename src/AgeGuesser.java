@@ -10,7 +10,7 @@ public class AgeGuesser {
     public static ArrayList<String> answerHistory = new ArrayList<String>();
     public static ArrayList<Integer> currentRange = new ArrayList<Integer>();
 
-    public static void main(String[] args) {
+    public static void main() {
         AgeGuesser.qSetOne();
         AgeGuesser.qSetTwo();
         AgeGuesser.qSetThree();
