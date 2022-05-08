@@ -19,7 +19,7 @@ import javax.swing.UIManager;
 
 public class MainGUI {
 
-    String      appName     = "Colt Chat v0.1";
+    String      appName     = "PatBot 3000";
     MainGUI     mainGUI;
     JFrame      newFrame    = new JFrame(appName);
     JButton     sendMessage;
@@ -48,8 +48,8 @@ public class MainGUI {
         newFrame.setVisible(false);
         preFrame = new JFrame(appName);
         usernameChooser = new JTextField(15);
-        JLabel chooseUsernameLabel = new JLabel("Pick a username:");
-        JButton enterServer = new JButton("Enter Chat Server");
+        JLabel chooseUsernameLabel = new JLabel("Username");
+        JButton enterServer = new JButton("Enter");
         enterServer.addActionListener(new enterServerButtonListener());
         JPanel prePanel = new JPanel(new GridBagLayout());
 
@@ -77,13 +77,13 @@ public class MainGUI {
         mainPanel.setLayout(new BorderLayout());
 
         JPanel southPanel = new JPanel();
-        southPanel.setBackground(Color.BLUE);
+        southPanel.setBackground(Color.GREEN);
         southPanel.setLayout(new GridBagLayout());
 
         messageBox = new JTextField(30);
         messageBox.requestFocusInWindow();
 
-        sendMessage = new JButton("Send Message");
+        sendMessage = new JButton("Send");
         sendMessage.addActionListener(new sendMessageButtonListener());
 
         chatBox = new JTextArea();

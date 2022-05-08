@@ -11,6 +11,7 @@ public class AgeGuesser {
     public static ArrayList<Integer> currentRange = new ArrayList<Integer>();
 
     public static void main() throws InterruptedException {
+        InputOutput.statement("Let's play my favorite game, "+InputOutput.name+"! I'll try to guess your age!");
         AgeGuesser.qSetOne();
         AgeGuesser.qSetTwo();
         AgeGuesser.qSetThree();
@@ -19,7 +20,7 @@ public class AgeGuesser {
 
     public static boolean yes(String a) {
         boolean check;
-        if (a.equalsIgnoreCase("yes") || a.equalsIgnoreCase("yeah") || a.equalsIgnoreCase("yep")) {
+        if (Greeting.yesList.contains(a.toLowerCase())) {
             check = true;
         } else {
             check = false;
@@ -28,7 +29,7 @@ public class AgeGuesser {
     }
 
     public static void qSetOne() throws InterruptedException {
-        InputOutput.question("Which actor's Spider-Man is your favorite, Tobey, Andrew, or Tom?");
+        InputOutput.question("Okay, first question...","Which actor's Spider-Man is your favorite, Tobey, Andrew, or Tom?");
         if (InputOutput.currentAnswer.equalsIgnoreCase("Tobey") || InputOutput.currentAnswer.equalsIgnoreCase("Toby")) {
             InputOutput.question("Oh nice, same! Well at it's my creator's.","","Wait...","I have a creator...?","Am I even real?");
             Collections.addAll(AgeGuesser.currentRange, 23, 75);
@@ -133,7 +134,6 @@ public class AgeGuesser {
                     }
             } else {
                 InputOutput.statement("Let's try that one again.");
-                continue;
             }
         }
     }
