@@ -1,7 +1,7 @@
 import static java.lang.Double.parseDouble;
 
 public class Counting {
-    public static void main(String[] args) throws InterruptedException {
+    public static void main() throws InterruptedException {
         InputOutput.question("That was fun! Let's play another game.","How about you pick a number and I will count to it.","What will your number be?");
         InputOutput.number = tryParseDouble(InputOutput.currentAnswer);
         while (InputOutput.number == null) {
