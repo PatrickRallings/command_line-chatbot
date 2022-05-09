@@ -3,5 +3,6 @@ public class Main {
         Greeting.hey();
         AgeGuesser.main();
         Counting.main();
+        Quiz.main();
     }
 }

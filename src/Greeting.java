@@ -69,7 +69,8 @@ public class Greeting {
             put("nope", "Ooof... Sorry :(");
             put("nah", "Nah? Well let's turn that into han! Oh that doesn't make sense");
             put("nein", "I nein speak German");
-            put("good", "Yeah? Nice! I'm happy to hear/read/compile that!");
+            put("good", "Nice, I'm doing good too. Heck yeah, go us!");
+            put("pretty good", "Nice, I'm pretty and good too. Heck yeah, go us!");
             put("great", "That's even better than good!");
             put("good!", "Heck yeah! Nice");
             put("great!", "Well that's *great* to hear! :]");

@@ -1,3 +1,5 @@
+package Matt_Ignore_Future_Integration_Classes;
+
 import java.awt.BorderLayout;
 import java.awt.Color;
 import java.awt.Font;
@@ -17,10 +19,10 @@ import javax.swing.JTextField;
 import javax.swing.SwingUtilities;
 import javax.swing.UIManager;
 
-public class MainGUI {
+public class GUI {
 
     String      appName     = "PatBot 3000";
-    MainGUI     mainGUI;
+    GUI mainGUI;
     JFrame      newFrame    = new JFrame(appName);
     JButton     sendMessage;
     JTextField  messageBox;
@@ -38,7 +40,7 @@ public class MainGUI {
                 } catch (Exception e) {
                     e.printStackTrace();
                 }
-                MainGUI mainGUI = new MainGUI();
+                GUI mainGUI = new GUI();
                 mainGUI.preDisplay();
             }
         });

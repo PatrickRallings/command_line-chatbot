@@ -2,8 +2,8 @@ import java.util.ArrayList;
 
 public class Quiz {
     public static int numCorrect = 0;
-    public static void main(String[] args) throws InterruptedException {
-        InputOutput.statement("That went pretty well.",InputOutput.name+", you are really good at telling me numbers to count!","Wait a sec. I have a great idea. Let's do a little miniature programming quiz!","I know, my best idea yet.","It's going to have three questions that test basic programming concepts. Let's begin.","Only enter the corresponding letter for your chosen answer)");
+    public static void main() throws InterruptedException {
+        InputOutput.statement("That went pretty well.",InputOutput.name+", you are really good at telling me numbers to count!","Wait a sec. I have a great idea. Let's do a little miniature programming quiz!","I know, my best idea yet.","It's going to have three questions that test basic programming concepts. Let's begin.","(Only enter the corresponding letter for your chosen answer)");
         Quiz.questionOne();
         Quiz.questionTwo();
         Quiz.questionThree();
@@ -21,7 +21,8 @@ public class Quiz {
             numCorrect++;
             InputOutput.statement("Correct!");
         } else {
-            InputOutput.statement("Sorry, that is not correct.");
+            InputOutput.statement("Sorry, that is not correct.","Let's try again!");
+            questionOne();
         }
     }
     public static void questionTwo() throws InterruptedException {
@@ -30,7 +31,8 @@ public class Quiz {
             numCorrect++;
             InputOutput.statement("Correct!");
         } else {
-            InputOutput.statement("Sorry, that is not correct.");
+            InputOutput.statement("Sorry, that was not the right answer.","Try again please.");
+            questionTwo();
         }
     }
     public static void questionThree() throws InterruptedException {
@@ -39,7 +41,8 @@ public class Quiz {
             numCorrect++;
             InputOutput.statement("Correct!");
         } else {
-            InputOutput.statement("Sorry, that is not correct.");
+            InputOutput.statement("Nope, that was not it.","Try again.");
+            questionThree();
         }
     }
 }
