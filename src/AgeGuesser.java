@@ -5,8 +5,6 @@ import java.util.Scanner;
 public class AgeGuesser {
     public static Scanner scan = new Scanner(System.in);
 
-    public static boolean ageNotGuessed = true;
-    public static int age;
     public static ArrayList<String> answerHistory = new ArrayList<String>();
     public static ArrayList<Integer> currentRange = new ArrayList<Integer>();
 
